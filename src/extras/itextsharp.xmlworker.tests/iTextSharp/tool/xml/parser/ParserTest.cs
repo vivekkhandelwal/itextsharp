@@ -55,7 +55,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.parser {
  *
  */
 
-    internal class ParserTest {
+    internal class ParserTest : BaseTest {
         private static List<String> list;
         private static StringBuilder writer;
 

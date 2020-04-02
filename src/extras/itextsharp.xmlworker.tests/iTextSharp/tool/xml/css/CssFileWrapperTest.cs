@@ -50,7 +50,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.css {
  *
  */
 
-    internal class CssFileWrapperTest {
+    internal class CssFileWrapperTest : BaseTest {
         private CSSFileWrapper w;
 
         [SetUp]

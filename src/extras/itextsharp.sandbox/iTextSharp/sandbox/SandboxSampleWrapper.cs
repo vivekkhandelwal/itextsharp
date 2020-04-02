@@ -58,9 +58,9 @@ namespace iTextSharp.sandbox
         /// </summary>
         private static readonly ILogger LOGGER = LoggerFactory.GetLogger(typeof (GenericTest));
 
-        public override IEnumerable<TestCaseData> Data()
+        public static IEnumerable<TestCaseData> Data()
         {
-            String dll = Environment.CurrentDirectory + "/itextsharp.sandbox.dll";
+            String dll = typeof(SandboxSampleWrapper).Assembly.Location;
             List<TestCaseData> testCases = GetTestTypes(dll);
             return testCases;
         }
@@ -82,6 +82,14 @@ namespace iTextSharp.sandbox
             }
 
             return testCases;
+        }
+
+        [Test]
+        [TestCaseSource("Data")]
+        [Timeout(120000)]
+        public override void Test(Type type, bool compareRenders)
+        {
+            base.Test(type, compareRenders);
         }
     }
 }

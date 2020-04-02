@@ -49,8 +49,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.parser
 {
-    class FilteredTextRenderListenerTest
-    {
+    class FilteredTextRenderListenerTest : BaseTest {
 
         [Test]
         virtual public void TestRegion()

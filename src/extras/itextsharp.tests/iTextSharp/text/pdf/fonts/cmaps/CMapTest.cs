@@ -46,8 +46,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.fonts.cmaps
 {
-    class CMapTest
-    {
+    class CMapTest : BaseTest {
 
         private void CheckInsertAndRetrieval(byte[] bytes, string uni)
         {

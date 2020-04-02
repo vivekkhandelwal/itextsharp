@@ -46,7 +46,7 @@ using iTextSharp.tool.xml;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml {
-    internal class XMLWorkerTest {
+    internal class XMLWorkerTest : BaseTest {
         private XMLWorker worker;
         private static bool called;
 

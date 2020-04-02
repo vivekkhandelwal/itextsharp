@@ -46,7 +46,7 @@ using iTextSharp.tool.xml.pipeline.html;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.pipeline {
-    internal class StackKeeperTest {
+    internal class StackKeeperTest : BaseTest {
         private Chunk a;
         private Chunk b;
         private Chunk c;

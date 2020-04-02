@@ -45,7 +45,7 @@ using iTextSharp.tool.xml;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml {
-    internal class TagChildrenTest {
+    internal class TagChildrenTest : BaseTest {
         /**
 	 *
 	 */

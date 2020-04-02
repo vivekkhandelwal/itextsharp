@@ -50,7 +50,7 @@ using iTextSharp.text.pdf.parser;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.parser {
-    public class SimpleTextExtractionStrategyTest {
+    public class SimpleTextExtractionStrategyTest : BaseTest {
         private String TEXT1;
         private String TEXT2;
 

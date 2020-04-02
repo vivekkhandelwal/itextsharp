@@ -53,7 +53,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.css {
  *
  */
 
-    internal class CSSFilesTest {
+    internal class CSSFilesTest : BaseTest {
         private CssFilesImpl files;
         private Tag t;
         public const String RESOURCES = @"..\..\resources\";

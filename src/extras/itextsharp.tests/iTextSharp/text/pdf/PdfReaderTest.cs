@@ -53,8 +53,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    class PdfReaderTest
-    {
+    class PdfReaderTest : BaseTest {
         [SetUp]
         virtual public void SetUp()
         {

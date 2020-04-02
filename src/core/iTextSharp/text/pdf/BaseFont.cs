@@ -341,6 +341,8 @@ namespace iTextSharp.text.pdf {
             BuiltinFonts14.Add(TIMES_BOLDITALIC, PdfName.TIMES_BOLDITALIC);
             BuiltinFonts14.Add(TIMES_ITALIC, PdfName.TIMES_ITALIC);
             BuiltinFonts14.Add(ZAPFDINGBATS, PdfName.ZAPFDINGBATS);
+
+            RegisterCP1252Encoding();
         }
     
         /** Generates the PDF stream with the Type1 and Truetype fonts returning
@@ -773,7 +775,24 @@ namespace iTextSharp.text.pdf {
                 return MACROMAN;
             return enc;
         }
-    
+
+        /**
+         * Register CP1252 encoding if already not registered
+         */
+        private static void RegisterCP1252Encoding()
+        {
+#if NETCOREAPP
+            try
+            {
+                System.Text.Encoding.GetEncoding(1252);
+            }
+            catch (NotSupportedException)
+            {
+                System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+            }
+#endif
+        }
+
         /**
          * Creates the <CODE>widths</CODE> and the <CODE>differences</CODE> arrays
          * @throws UnsupportedEncodingException the encoding is not supported

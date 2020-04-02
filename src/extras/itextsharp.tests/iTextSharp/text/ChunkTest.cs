@@ -58,7 +58,7 @@ using iTextSharp.text.pdf.draw;
 
 namespace iTextSharp.text {
 
-    public class ChunkTest {
+    public class ChunkTest : BaseTest {
         private const String _4SPACES = "    4spaces    ";
         private const String _TAB = "\t4spaces    ";
 

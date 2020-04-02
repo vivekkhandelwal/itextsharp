@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;net20</TargetFrameworks>
+    <RootNamespace>iTextSharp.xtra</RootNamespace>
+    <AssemblyName>itextsharp.xtra</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>itextsharp.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="4.7.0" />
+    <PackageReference Include="System.Xml.XmlDocument" Version="4.3.0" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework)' == 'net20'">
+    <Reference Include="System" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="iTextSharp\text\pdf\mc\MCFieldFlattener.cs" />
+    <Compile Include="iTextSharp\text\pdf\mc\MCParser.cs" />
+    <Compile Include="iTextSharp\text\pdf\mc\StructureItem.cs" />
+    <Compile Include="iTextSharp\text\pdf\mc\StructureItems.cs" />
+    <Compile Include="iTextSharp\text\pdf\mc\StructureMCID.cs" />
+    <Compile Include="iTextSharp\text\pdf\mc\StructureObject.cs" />
+    <Compile Include="iTextSharp\text\pdf\ocg\OCGParser.cs" />
+    <Compile Include="iTextSharp\text\pdf\ocg\OCGRemover.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="iTextSharp\text\pdf\pdfcleanup\PdfCleanUpContentChunk.cs" />
+    <Compile Include="iTextSharp\text\pdf\pdfcleanup\PdfCleanUpContentOperator.cs" />
+    <Compile Include="iTextSharp\text\pdf\pdfcleanup\PdfCleanUpContext.cs" />
+    <Compile Include="iTextSharp\text\pdf\pdfcleanup\PdfCleanUpLocation.cs" />
+    <Compile Include="iTextSharp\text\pdf\pdfcleanup\PdfCleanUpProcessor.cs" />
+    <Compile Include="iTextSharp\text\pdf\pdfcleanup\PdfCleanUpRegionFilter.cs" />
+    <Compile Include="iTextSharp\text\pdf\pdfcleanup\PdfCleanUpRenderListener.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\CuePoint.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaActivation.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaAnimation.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaAnnotation.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaCommand.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaConfiguration.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaDeactivation.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaExecuteAction.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaInstance.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaParams.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaPosition.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaPresentation.cs" />
+    <Compile Include="iTextSharp\text\pdf\richmedia\RichMediaWindow.cs" />
+    <Compile Include="iTextSharp\text\pdf\spatial\units\SpacialUnits.cs" />
+    <Compile Include="iTextSharp\text\pdf\util\PdfResourceCounter.cs" />
+    <Compile Include="iTextSharp\text\pdf\util\SmartPdfSplitter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="iTextSharp\text\pdf\spatial\CoordinateSystem.cs" />
+    <Compile Include="iTextSharp\text\pdf\spatial\GeographicCoordinateSystem.cs" />
+    <Compile Include="iTextSharp\text\pdf\spatial\Measure.cs" />
+    <Compile Include="iTextSharp\text\pdf\spatial\MeasureGeospatial.cs" />
+    <Compile Include="iTextSharp\text\pdf\spatial\MeasureRectilinear.cs" />
+    <Compile Include="iTextSharp\text\pdf\spatial\objects\NumberFormatArray.cs" />
+    <Compile Include="iTextSharp\text\pdf\spatial\objects\NumberFormatDictionary.cs" />
+    <Compile Include="iTextSharp\text\pdf\spatial\objects\XYArray.cs" />
+    <Compile Include="iTextSharp\text\pdf\spatial\PointData.cs" />
+    <Compile Include="iTextSharp\text\pdf\spatial\ProjectedCoordinateSystem.cs" />
+    <Compile Include="iTextSharp\text\pdf\spatial\Viewport.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="itextsharp.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\itextsharp.netcore.csproj" />
+  </ItemGroup>
+  
+</Project>

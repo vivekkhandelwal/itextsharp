@@ -46,8 +46,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    class DocumentFontTest
-    {
+    class DocumentFontTest : BaseTest {
         string TEST_RESOURCES_PATH = @"..\..\resources\text\pdf\DocumentFontTest\";
 
         [SetUp]

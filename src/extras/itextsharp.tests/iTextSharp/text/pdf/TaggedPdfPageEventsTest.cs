@@ -52,6 +52,16 @@ namespace itextsharp.tests.iTextSharp.text.pdf {
         private const string TEST_RESOURCES_PATH = @"..\..\resources\text\pdf\TaggedPdfPageEventsTest\";
         private const string OUTPUT_FOLDER = @"TaggedPdfPageEventsTest\";
 
+#if NETCOREAPP
+        [OneTimeSetUp]
+#else
+        [TestFixtureSetUp]
+#endif
+        public void RunBeforeAnyTests()
+        {
+            BaseTest.RunBeforeEachTests();
+        }
+
         [SetUp]
         public static void Init() {
             Directory.CreateDirectory(OUTPUT_FOLDER);

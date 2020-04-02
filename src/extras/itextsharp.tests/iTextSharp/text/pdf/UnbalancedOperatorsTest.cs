@@ -48,8 +48,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    class UnbalancedOperatorsTest
-    {
+    class UnbalancedOperatorsTest : BaseTest {
         private Document document;
         private PdfWriter writer;
 

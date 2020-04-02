@@ -54,7 +54,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class TPBreakTest {
+    internal class TPBreakTest : BaseTest {
         /**
 	 * Verifies that the call to end of {@link Break} returns a Chunk.NEWLINE.
 	 */

@@ -55,7 +55,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.css {
  *
  */
 
-    internal class WidthCalculatorTest {
+    internal class WidthCalculatorTest : BaseTest {
         private Tag body;
         private Tag table;
         private Tag row;

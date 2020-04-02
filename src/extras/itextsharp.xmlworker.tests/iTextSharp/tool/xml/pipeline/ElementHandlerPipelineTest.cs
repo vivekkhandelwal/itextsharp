@@ -49,7 +49,7 @@ using iTextSharp.tool.xml.pipeline.end;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.pipeline {
-    internal class ElementHandlerPipelineTest {
+    internal class ElementHandlerPipelineTest : BaseTest {
         private static List<IWritable> lst;
         private ProcessObject po;
         private ElementHandlerPipeline p;

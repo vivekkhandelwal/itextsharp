@@ -52,7 +52,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class AbstractTagprocessorTest {
+    internal class AbstractTagprocessorTest : BaseTest {
         private class CustomTagProcessor : AbstractTagProcessor {
         }
 

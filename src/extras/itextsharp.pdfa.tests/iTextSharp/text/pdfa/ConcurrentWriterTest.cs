@@ -52,7 +52,8 @@ using NUnit.Framework;
 namespace itextsharp.pdfa.tests.iTextSharp.text.pdfa {
     
     [TestFixture]
-    class ConcurrentWriterTest {
+    class ConcurrentWriterTest : BaseTest
+    {
 
         public const String RESOURCES = @"..\..\resources\text\pdfa\";
         

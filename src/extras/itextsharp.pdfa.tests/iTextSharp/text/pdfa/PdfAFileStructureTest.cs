@@ -49,7 +49,7 @@ using iTextSharp.text.pdf;
 namespace iTextSharp.text.pdfa
 {
     [TestFixture]
-    public class PdfAFileStructureTest
+    public class PdfAFileStructureTest : BaseTest
     {
         /*
             The % character of the file header shall occur at byte offset 0 of the file.

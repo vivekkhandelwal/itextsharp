@@ -54,7 +54,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class ListItemTest {
+    internal class ListItemTest : BaseTest {
         private OrderedUnorderedListItem li = new OrderedUnorderedListItem();
         private List<IElement> currentContent = new List<IElement>();
         private WorkerContextImpl workerContextImpl;

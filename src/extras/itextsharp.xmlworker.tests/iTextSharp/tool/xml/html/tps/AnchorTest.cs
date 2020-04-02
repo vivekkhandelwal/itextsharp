@@ -56,7 +56,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class AnchorTest {
+    internal class AnchorTest : BaseTest {
         /**
 	 * Validates that the content of an &lt;a&gt; is transformed to a Chunk.
 	 */

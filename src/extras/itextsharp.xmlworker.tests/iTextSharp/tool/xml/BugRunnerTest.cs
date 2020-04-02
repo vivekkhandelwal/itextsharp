@@ -50,7 +50,7 @@ using iTextSharp.tool.xml;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml {
-    internal class BugRunnerTest {
+    internal class BugRunnerTest : BaseTest {
         public const String RESOURCES = @"..\..\resources\";
         public const String TARGET = @"BugRunnerTest\";
         private List<String> list = new List<String>();

@@ -47,8 +47,7 @@ using iTextSharp.text.io;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    class RandomAccessFileOrArrayTest
-    {
+    class RandomAccessFileOrArrayTest : BaseTest {
         byte[] data;
         RandomAccessFileOrArray rafoa;
 

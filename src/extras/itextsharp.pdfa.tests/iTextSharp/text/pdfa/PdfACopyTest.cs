@@ -49,7 +49,8 @@ using iTextSharp.text.pdf;
 using NUnit.Framework;
 
 namespace itextsharp.pdfa.tests.iTextSharp.text.pdfa {
-    public class PdfACopyTest {
+    public class PdfACopyTest : BaseTest
+    {
         protected const String outputDir = "copy\\";
         public const String RESOURCES = @"..\..\resources\text\pdfa\";
 

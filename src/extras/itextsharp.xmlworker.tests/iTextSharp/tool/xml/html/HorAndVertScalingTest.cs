@@ -54,7 +54,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html {
  *
  */
 
-    internal class HorAndVertScalingTest {
+    internal class HorAndVertScalingTest : BaseTest {
         private static List<IElement> elementList;
         private const string RESOURCES = @"..\..\resources\";
 

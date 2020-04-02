@@ -45,8 +45,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.parser
 {
-    class VectorTest
-    {
+    class VectorTest : BaseTest {
         [Test]
         virtual public void TestCrossVector()
         {

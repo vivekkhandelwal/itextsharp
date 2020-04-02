@@ -55,7 +55,7 @@ namespace itextsharp.tests.iTextSharp.text.pdf.table {
     /**
      * @author Raf Hens
      */
-    public class KeepTogetherTest {
+    public class KeepTogetherTest : BaseTest {
 
         private String cmpFolder = @"..\..\resources\text\pdf\table\keeptogether\";
         private String outFolder = @"table\keeptogether\";

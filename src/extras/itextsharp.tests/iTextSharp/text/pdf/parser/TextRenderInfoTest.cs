@@ -51,7 +51,7 @@ using iTextSharp.text.pdf.parser;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.parser {
-    public class TextRenderInfoTest {
+    public class TextRenderInfoTest : BaseTest {
         
         public const int FIRST_PAGE = 1;
         public const int FIRST_ELEMENT_INDEX = 0;

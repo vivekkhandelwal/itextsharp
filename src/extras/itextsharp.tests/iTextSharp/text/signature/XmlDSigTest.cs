@@ -58,7 +58,7 @@ using X509Certificate = Org.BouncyCastle.X509.X509Certificate;
 
 namespace itextsharp.tests.resources.text.signature
 {
-    public class XmlDSigTest
+    public class XmlDSigTest : BaseTest
     {
         virtual protected void SignWithCertificate(String src, String dest, ICipherParameters pk,
             X509Certificate[] chain, String digestAlgorithm) {
@@ -305,12 +305,23 @@ namespace itextsharp.tests.resources.text.signature
             KeyInfoClause keyInfo = (KeyInfoClause)keyInfoClauses.Current;
 
             bool result = false;
-            if (keyInfo is RSAKeyValue)
-                result = ((RSACryptoServiceProvider)((RSAKeyValue)keyInfo).Key).VerifyData(signedInfoByteRange, "SHA1", signedXml.SignatureValue);
+            if (keyInfo is RSAKeyValue) {
+                if (((RSAKeyValue)keyInfo).Key is RSACryptoServiceProvider)
+                    result = ((RSACryptoServiceProvider)((RSAKeyValue)keyInfo).Key).VerifyData(signedInfoByteRange, "SHA1", signedXml.SignatureValue);
+#if NETCOREAPP
+                else
+                    result = ((RSA)((RSAKeyValue)keyInfo).Key).VerifyData(signedInfoByteRange, signedXml.SignatureValue, HashAlgorithmName.SHA1, RSASignaturePadding.Pkcs1);
+#endif
+            }
             else if (keyInfo is KeyInfoX509Data)
             {
                 AsymmetricAlgorithm rsa = ((X509Certificate2)(((KeyInfoX509Data)keyInfo).Certificates[0])).PublicKey.Key;
-                result = ((RSACryptoServiceProvider) rsa).VerifyData(signedInfoByteRange, "SHA1", signedXml.SignatureValue);
+                if (rsa is RSACryptoServiceProvider)
+                    result = ((RSACryptoServiceProvider)rsa).VerifyData(signedInfoByteRange, "SHA1", signedXml.SignatureValue);
+#if NETCOREAPP
+                else
+                    result = ((RSACng)rsa).VerifyData(signedInfoByteRange, signedXml.SignatureValue, HashAlgorithmName.SHA1, RSASignaturePadding.Pkcs1);
+#endif
             }
 
             return result;

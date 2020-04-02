@@ -50,7 +50,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.parser
 {
-    class PdfContentStreamProcessorTest
+    class PdfContentStreamProcessorTest : BaseTest
     {
         private DebugRenderListener _renderListener;
         string TEST_RESOURCES_PATH = @"..\..\resources\text\pdf\parser\PdfContentStreamProcessorTest\";

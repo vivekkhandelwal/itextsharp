@@ -48,7 +48,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.parser
 {
-    class PdfImageObjectTest
+    class PdfImageObjectTest : BaseTest
     {
         string TEST_RESOURCES_PATH = @"..\..\resources\text\pdf\parser\PdfImageObjectTest\";
 

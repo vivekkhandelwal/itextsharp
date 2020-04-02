@@ -51,7 +51,7 @@ using iTextSharp.tool.xml.pipeline.html;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.pipeline {
-    internal class HtmlPipelineTest {
+    internal class HtmlPipelineTest : BaseTest {
         private HtmlPipeline p;
         private WorkerContextImpl wc;
         private HtmlPipelineContext hpc;

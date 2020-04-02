@@ -53,7 +53,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.css {
  *
  */
 
-    internal class CssUtilsTest {
+    internal class CssUtilsTest : BaseTest {
         private static int MAX = 10000;
         private CssUtils css;
         private String str;

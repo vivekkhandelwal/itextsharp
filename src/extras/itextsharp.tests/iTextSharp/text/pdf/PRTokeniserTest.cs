@@ -46,8 +46,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    class PRTokeniserTest
-    {
+    class PRTokeniserTest : BaseTest {
         [SetUp]
         virtual public void SetUp()
         {

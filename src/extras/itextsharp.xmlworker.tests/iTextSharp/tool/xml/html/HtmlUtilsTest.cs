@@ -50,7 +50,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html {
  *
  */
 
-    internal class HtmlUtilsTest {
+    internal class HtmlUtilsTest : BaseTest {
         [SetUp]
         virtual public void SetUp() {
             LoggerFactory.GetInstance().SetLogger(new SysoLogger(3));

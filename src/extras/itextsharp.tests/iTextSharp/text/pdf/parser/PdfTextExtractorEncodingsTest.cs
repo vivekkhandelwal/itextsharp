@@ -51,8 +51,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.parser
 {
-    class PdfTextExtractorEncodingsTest
-    {
+    class PdfTextExtractorEncodingsTest : BaseTest {
         /** Basic Latin characters, with Unicode values less than 128 */
         private static String TEXT1 = "AZaz09*!";
         /** Latin-1 characters */
@@ -62,7 +61,11 @@ namespace itextsharp.tests.iTextSharp.text.pdf.parser
         //  private static  String TEXT2 = "\u0027\u0060\u00a4\u00a6\00b5\u2019";
 
 
-        [TestFixtureSetUp]
+#if NETCOREAPP
+    	[OneTimeSetUp]
+#else
+    	[TestFixtureSetUp]
+#endif
         public static void InitializeFontFactory()
         {
             FontFactory.RegisterDirectories();

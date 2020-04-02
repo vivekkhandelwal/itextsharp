@@ -48,7 +48,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    public class StringUtilsTest {
+    public class StringUtilsTest : BaseTest {
 
     [TestCase('\u0000', (byte)0x0, (byte)0x0)]
     [TestCase('\b', (byte)0x0, (byte)0x08)]

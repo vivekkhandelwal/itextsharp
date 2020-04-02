@@ -53,7 +53,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.css {
  * @author Emiel Ackermann
  */
 
-    internal class FontSizeTranslatorTest {
+    internal class FontSizeTranslatorTest : BaseTest {
         private FontSizeTranslator fst = FontSizeTranslator.GetInstance();
         private Tag p;
         private Tag span;

@@ -53,7 +53,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.parser {
  *
  */
 
-    internal class HTMLWhiteSpacesTest {
+    internal class HTMLWhiteSpacesTest : BaseTest {
         private String str;
         private static StringBuilder b;
 

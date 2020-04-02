@@ -53,7 +53,7 @@ using iTextSharp.text.xml;
 using Path = System.IO.Path;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.mc {
-    class AcroFieldsFlattenTest {
+    class AcroFieldsFlattenTest : BaseTest {
         public const String CMP_FOLDER = @"..\..\resources\text\pdf\mc\";
         public const String OUT_FOLDER = @"AcroFieldsFlattenTest\";
 

@@ -49,11 +49,15 @@ using iTextSharp.text.pdf.events;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf {
-    public class TextFieldTest {
+    public class TextFieldTest : BaseTest {
         private const string CMP_FOLDER = @"..\..\resources\text\pdf\TextFieldTest\";
         private const string OUTPUT_FOLDER = @"TextFieldTest\";
 
-        [TestFixtureSetUp]
+#if NETCOREAPP
+    	[OneTimeSetUp]
+#else
+    	[TestFixtureSetUp]
+#endif
         public static void Init() {
             Directory.CreateDirectory(OUTPUT_FOLDER);
         }

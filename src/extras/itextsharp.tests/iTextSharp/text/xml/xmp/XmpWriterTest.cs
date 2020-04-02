@@ -52,12 +52,16 @@ using iTextSharp.xmp.options;
 
 namespace iTextSharp.text.xml.xmp {
     [TestFixture]
-    public class XmpWriterTest {
+    public class XmpWriterTest : BaseTest {
 
         public static String OUT_FOLDER = "XmpWriterTest/";
         public static String CMP_FOLDER = @"../../resources/text/xml/xmp/";
 
-        [TestFixtureSetUp]
+#if NETCOREAPP
+    	[OneTimeSetUp]
+#else
+    	[TestFixtureSetUp]
+#endif
         virtual public void Init() {
             if (Directory.Exists(OUT_FOLDER)) {
                 foreach (String path in Directory.GetFiles(OUT_FOLDER))

@@ -59,7 +59,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html {
  *
  */
 
-    internal class LoadCssThroughLinkStyleTagTest {
+    internal class LoadCssThroughLinkStyleTagTest : BaseTest {
         private static String HTML1 =
             "<html><head><link type='text/css' rel='stylesheet' href='style.css'/></head><body><p>Import css files test</p></body></html>";
 

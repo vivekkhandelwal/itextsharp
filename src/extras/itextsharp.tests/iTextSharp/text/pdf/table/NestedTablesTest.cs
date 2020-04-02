@@ -52,7 +52,7 @@ using iTextSharp.text.pdf;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.table {
-    class NestedTablesTest {
+    class NestedTablesTest : BaseTest {
 
         private String cmpFolder = @"..\..\resources\text\pdf\table\nestedTablesTest\";
         private String outFolder = @"table\nestedTablesTest\";

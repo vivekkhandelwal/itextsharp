@@ -47,7 +47,7 @@ using iTextSharp.tool.xml.css.apply;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.css.apply {
-    internal class FontFamilyTest {
+    internal class FontFamilyTest : BaseTest {
         static FontFamilyTest() {
             LoggerFactory.GetInstance().SetLogger(new SysoLogger(3));
         }

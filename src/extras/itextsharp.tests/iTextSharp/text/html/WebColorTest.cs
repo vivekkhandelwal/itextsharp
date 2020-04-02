@@ -47,7 +47,7 @@ using iTextSharp.text.html;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.html {
-    public class WebColorTest {
+    public class WebColorTest : BaseTest {
         // Mix of different separator chars
         private const String RGB_PERCENT = "rgb(100%, 33%	50%,20%)";
         private const String RGB_OUT_OF_RANGE = "RGB(-100, 10%, 500)";

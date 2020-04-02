@@ -55,7 +55,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html {
  *
  */
 
-    internal class AlignAndMarginTest {
+    internal class AlignAndMarginTest : BaseTest {
         private static List<IElement> elementList;
 
         private const string RESOURCES = @"..\..\resources\";

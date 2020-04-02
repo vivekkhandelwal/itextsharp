@@ -51,12 +51,13 @@ using iTextSharp.xmp.options;
 
 namespace iTextSharp.text.xml.xmp {
     [TestFixture]
-    public class PdfAXmpWriterTest {
+    public class PdfAXmpWriterTest : BaseTest
+    {
 
         public static String OUT_FOLDER = "PdfAXmpWriterTest/";
         public static String CMP_FOLDER = @"../../resources/text/xml/xmp/";
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         virtual public void Init() {
             if (Directory.Exists(OUT_FOLDER)) {
                 foreach (String path in Directory.GetFiles(OUT_FOLDER))

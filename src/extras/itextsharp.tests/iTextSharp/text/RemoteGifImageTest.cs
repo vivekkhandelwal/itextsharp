@@ -49,8 +49,7 @@ using System.IO;
 namespace itextsharp.tests.iTextSharp.text
 {
     [Ignore("This test can be flaky depending on remote resources availability.")]
-    class RemoteGifImageTest
-    {
+    class RemoteGifImageTest : BaseTest {
         private String[] GIF_LOCATION = {
             //"http://itextpdf.com/img/logo.gif",
             "http://itextsupport.com/files/testresources/img/remote_gif_test.gif",

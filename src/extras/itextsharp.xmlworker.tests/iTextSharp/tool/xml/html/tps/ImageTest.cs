@@ -56,7 +56,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
      * @author itextpdf.com
      *
      */
-    internal class ImageTest {
+    internal class ImageTest : BaseTest {
         static ImageTest() {
             LoggerFactory.GetInstance().SetLogger(new SysoLogger(5));
         }

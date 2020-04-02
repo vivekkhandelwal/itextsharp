@@ -48,7 +48,7 @@ using iTextSharp.text.xml.simpleparser;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.xml.simpleparser {
-    internal class SimpleXMLParserTest {
+    internal class SimpleXMLParserTest : BaseTest {
         /**
 	     * Validate correct whitespace handling of SimpleXMLHandler.
 	     * Carriage return received as text instead of space.

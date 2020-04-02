@@ -46,8 +46,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    public class PdfDictionaryTest
-    {
+    public class PdfDictionaryTest : BaseTest {
         [Test]
         public void PdfDictionaryGetReturnsNullIfKeyIsNull()
         {

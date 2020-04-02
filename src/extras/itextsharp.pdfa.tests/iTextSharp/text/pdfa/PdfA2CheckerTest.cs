@@ -50,7 +50,8 @@ using iTextSharp.text.pdf;
 
 namespace iTextSharp.text.pdfa {
     [TestFixture]
-    public class PdfA2CheckerTest {
+    public class PdfA2CheckerTest : BaseTest
+    {
         public const String RESOURCES = @"..\..\resources\text\pdfa\";
         public const String TARGET = "PdfA2CheckerTest\\";
         public const String OUT = TARGET + "pdf\\out";

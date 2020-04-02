@@ -49,7 +49,7 @@ using iTextSharp.tool.xml.pipeline.ctx;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.pipeline {
-    internal class CssResolverPipelineTest {
+    internal class CssResolverPipelineTest : BaseTest {
         private IDictionary<String, String> css2;
 
         [SetUp]

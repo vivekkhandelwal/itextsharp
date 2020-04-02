@@ -54,7 +54,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html {
  * @author Balder
  */
 
-    internal class FontAndColorTest {
+    internal class FontAndColorTest : BaseTest {
         private static List<IElement> elementList;
 
         private const string RESOURCES = @"..\..\resources\";

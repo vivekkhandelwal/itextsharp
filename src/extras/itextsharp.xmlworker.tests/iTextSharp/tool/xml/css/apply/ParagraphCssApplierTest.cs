@@ -51,7 +51,7 @@ using iTextSharp.tool.xml.pipeline.html;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.css.apply {
-    internal class ParagraphCssApplierTest {
+    internal class ParagraphCssApplierTest : BaseTest {
         static ParagraphCssApplierTest() {
             LoggerFactory.GetInstance().SetLogger(new SysoLogger(3));
         }

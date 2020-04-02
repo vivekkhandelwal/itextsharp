@@ -50,7 +50,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.table {
 
-    public class ColorsInTaggedDocumentsTest {
+    public class ColorsInTaggedDocumentsTest : BaseTest {
         private String cmpFolder = @"..\..\resources\text\pdf\table\tableColorsTest\";
         private String outFolder = @"table\tableColorsTest\";
 

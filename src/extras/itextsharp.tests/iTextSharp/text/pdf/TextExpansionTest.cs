@@ -52,8 +52,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    class TextExpansionTest
-    {
+    class TextExpansionTest : BaseTest {
         private const string SOURCE_FOLDER = @"..\..\resources\text\pdf\TextExpansionTest\";
         private const string DEST_FOLDER = @"TextExpansionTest\";
 

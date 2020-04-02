@@ -48,7 +48,7 @@ using iTextSharp.text.pdf;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf {
-    internal class BookmarksTest {
+    internal class BookmarksTest : BaseTest {
         private const String TITLE = "1.\u00a0Paragraph 1";
 
         private class CustomPdfPageEventHelper : PdfPageEventHelper {

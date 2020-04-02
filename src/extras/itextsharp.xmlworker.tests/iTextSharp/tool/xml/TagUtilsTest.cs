@@ -45,7 +45,7 @@ using iTextSharp.tool.xml.exceptions;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml {
-    internal class TagUtilsTest {
+    internal class TagUtilsTest : BaseTest {
         private Tag sibling1;
         private Tag sibling2;
         private Tag parent;

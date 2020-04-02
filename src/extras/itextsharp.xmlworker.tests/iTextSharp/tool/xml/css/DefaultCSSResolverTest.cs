@@ -53,7 +53,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.css {
  *
  */
 
-    internal class DefaultCSSResolverTest {
+    internal class DefaultCSSResolverTest : BaseTest {
         private StyleAttrCSSResolver css;
         private Tag parent;
         private Tag child;

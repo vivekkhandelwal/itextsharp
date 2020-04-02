@@ -56,7 +56,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class NonSanitizedTagTest {
+    internal class NonSanitizedTagTest : BaseTest {
         private NonSanitizedTag t = new NonSanitizedTag();
         private IList<IElement> content = null;
         private WorkerContextImpl workerContextImpl;

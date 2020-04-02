@@ -46,8 +46,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.text.error_messages
 {
-    public class MessageLocalizationTest
-    {
+    public class MessageLocalizationTest : BaseTest {
         [Test]
         virtual public void TestBackslashes()
         {

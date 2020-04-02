@@ -54,7 +54,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html {
  * Added to visually check all snippets. (see target/text-classes/*.pdf )
  */
 
-    internal class SamplesTest {
+    internal class SamplesTest : BaseTest {
         public static String RESOURCE_TEST_PATH = @"..\..\resources\";
         private string TARGET = @"SamplesTest\";
         private List<String> list = new List<String>();

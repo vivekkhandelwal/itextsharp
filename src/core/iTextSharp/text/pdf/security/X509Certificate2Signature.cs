@@ -77,6 +77,12 @@ namespace iTextSharp.text.pdf.security {
                 encryptionAlgorithm = "RSA";
             else if (certificate.PrivateKey is DSACryptoServiceProvider)
                 encryptionAlgorithm = "DSA";
+#if NETCOREAPP
+            else if (certificate.PrivateKey is RSACng)
+                encryptionAlgorithm = "RSA";
+            else if (certificate.PrivateKey is DSACng)
+                encryptionAlgorithm = "DSA";
+#endif
             else
                 throw new ArgumentException("Unknown encryption algorithm " + certificate.PrivateKey);
         }
@@ -86,6 +92,18 @@ namespace iTextSharp.text.pdf.security {
                 RSACryptoServiceProvider rsa = (RSACryptoServiceProvider)certificate.PrivateKey;
                 return rsa.SignData(message, hashAlgorithm);
             }
+#if NETCOREAPP
+            else if (certificate.PrivateKey is RSACng)
+            {
+                RSACng rsa = (RSACng)certificate.PrivateKey;
+                return rsa.SignData(message, new HashAlgorithmName(hashAlgorithm), RSASignaturePadding.Pkcs1);
+            }
+            else if (certificate.PrivateKey is DSACng)
+            {
+                DSACng rsa = (DSACng)certificate.PrivateKey;
+                return rsa.SignData(message, new HashAlgorithmName(hashAlgorithm));
+            }
+#endif
             else {
                 DSACryptoServiceProvider dsa = (DSACryptoServiceProvider)certificate.PrivateKey;
                 return dsa.SignData(message);

@@ -51,7 +51,7 @@ using iTextSharp.text.pdf;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf {
-    class PdfStamperTest {
+    class PdfStamperTest : BaseTest {
         static  string DestFolder = "com/itextpdf/test/pdf/PdfStamperTest/";
         private string TestResourcesPath = @"..\..\resources\text\pdf\PdfStamperTest\";
 

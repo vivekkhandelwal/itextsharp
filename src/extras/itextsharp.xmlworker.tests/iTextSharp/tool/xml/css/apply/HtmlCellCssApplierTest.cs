@@ -52,7 +52,7 @@ using iTextSharp.tool.xml.pipeline.html;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.css.apply {
-    internal class HtmlCellCssApplierTest {
+    internal class HtmlCellCssApplierTest : BaseTest {
         private List<Element> cells;
         private Tag tag;
         private NoNewLineParagraph basicPara;

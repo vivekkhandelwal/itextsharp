@@ -52,7 +52,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class DefaultTagProcessorFactoryTest {
+    internal class DefaultTagProcessorFactoryTest : BaseTest {
         /**
 	 * @author itextpdf.com
 	 *

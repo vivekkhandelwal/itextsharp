@@ -44,7 +44,7 @@ using iTextSharp.tool.xml;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml {
-    internal class TagTest {
+    internal class TagTest : BaseTest {
         /**
 	 * See that the attribute map is initialized
 	 */

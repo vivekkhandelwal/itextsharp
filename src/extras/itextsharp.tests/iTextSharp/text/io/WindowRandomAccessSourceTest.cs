@@ -46,8 +46,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.io
 {
-    class WindowRandomAccessSourceTest
-    {
+    class WindowRandomAccessSourceTest : BaseTest {
         ArrayRandomAccessSource source;
         byte[] data;
 

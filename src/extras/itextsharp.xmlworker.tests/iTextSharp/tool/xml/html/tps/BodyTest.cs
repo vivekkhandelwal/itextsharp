@@ -55,7 +55,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class BodyTest {
+    internal class BodyTest : BaseTest {
         private Body b = new Body();
         private WorkerContextImpl workerContextImpl;
 

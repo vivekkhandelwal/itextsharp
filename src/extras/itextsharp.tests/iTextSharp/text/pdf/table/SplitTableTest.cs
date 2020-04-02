@@ -52,11 +52,15 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.table {
     [TestFixture]
-    class SplitTableTest {
+    class SplitTableTest : BaseTest {
         private static readonly String cmpFolder = @"..\..\resources\text\pdf\table\SplitTableTest\";
         private static readonly String outFolder = @"table\SplitTableTest\";
 
-        [TestFixtureSetUp]
+#if NETCOREAPP
+    	[OneTimeSetUp]
+#else
+    	[TestFixtureSetUp]
+#endif
         public static void Init() {
             Directory.CreateDirectory(outFolder);
             TestResourceUtils.PurgeTempFiles();

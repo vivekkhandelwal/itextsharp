@@ -49,7 +49,7 @@ namespace itextsharp.xmlworker.tests.examples {
  *
  */
 
-    internal class Setup {
+    internal class Setup : BaseTest {
         static Setup() {
             LoggerFactory.GetInstance().SetLogger(new SysoLogger());
             FontFactory.RegisterDirectories();

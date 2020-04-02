@@ -46,7 +46,7 @@ using iTextSharp.tool.xml.parser.state;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.parser {
-    internal class SpecialCharactersTest {
+    internal class SpecialCharactersTest : BaseTest {
         private String regHtml;
         private int reg;
         private SpecialCharState scState;

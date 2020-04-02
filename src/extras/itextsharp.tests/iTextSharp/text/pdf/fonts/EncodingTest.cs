@@ -51,7 +51,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.fonts
 {
-    class EncodingTest {
+    class EncodingTest : BaseTest {
 
     private  static String sourceFolder = @"..\..\resources\text\pdf\fonts\EncodingTest/";
     private static String outFolder = "fonts/EncodingTest";

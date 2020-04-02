@@ -51,7 +51,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    class NamedDestinationsTest {
+    class NamedDestinationsTest : BaseTest {
 
         private String srcFolder = @"..\..\resources\text\pdf\NamedDestinationsTest\";
         private String outFolder = "com/itextpdf/test/pdf/NamedDestinationsTest/";

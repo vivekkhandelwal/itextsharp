@@ -47,8 +47,7 @@ using iTextSharp.text.io;
 
 namespace itextsharp.tests.iTextSharp.text.io
 {
-    class GroupedRandomAccessSourceTest
-    {
+    class GroupedRandomAccessSourceTest : BaseTest {
         byte[] data;
 
         [SetUp]

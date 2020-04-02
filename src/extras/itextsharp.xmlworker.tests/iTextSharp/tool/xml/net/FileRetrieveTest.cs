@@ -49,7 +49,7 @@ using iTextSharp.tool.xml.net;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.net {
-    internal class FileRetrieveTest {
+    internal class FileRetrieveTest : BaseTest {
         static FileRetrieveTest() {
             LoggerFactory.GetInstance().SetLogger(new SysoLogger(3));
         }

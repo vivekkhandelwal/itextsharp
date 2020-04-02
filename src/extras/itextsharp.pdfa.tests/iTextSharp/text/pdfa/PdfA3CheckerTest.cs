@@ -48,7 +48,8 @@ using NUnit.Framework;
 
 namespace iTextSharp.text.pdfa {
     [TestFixture]
-    internal class PdfA3CheckerTest {
+    internal class PdfA3CheckerTest : BaseTest
+    {
         public const String RESOURCES = @"..\..\resources\text\pdfa\";
         public const String TARGET = "PdfA3CheckerTest\\";
         public const String OUT = TARGET + "pdf\\out";

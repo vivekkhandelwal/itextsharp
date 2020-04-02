@@ -50,7 +50,7 @@ using iTextSharp.text.pdf.parser;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.parser {
-    public class HighlightItemsTest {
+    public class HighlightItemsTest : BaseTest {
 
         private const string outputPath = @"itextpdf\text\pdf\parser\HighlightItemsTest\";
         private const string inputPath = @"..\..\resources\text\pdf\parser\HighlightItemsTest\";

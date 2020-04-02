@@ -50,7 +50,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.table
 {
-    public class KeepRowsTogetherTest
+    public class KeepRowsTogetherTest : BaseTest
     {
         private String cmpFolder = @"..\..\resources\text\pdf\table\keeprowstogether\";
         private String outFolder = @"table\keeprowstogether\";

@@ -49,7 +49,7 @@ namespace itextsharp.tests.iTextSharp.text.pdf.fonts {
     /**
     * @author Daniel Lichtenberger, CHEMDOX
     */
-    public class FontFamilyTest {
+    public class FontFamilyTest : BaseTest {
 
         private static string srcFolder = @"..\..\resources\text\pdf\fonts\NotoFont\";
 

@@ -54,7 +54,7 @@ using iTextSharp.tool.xml.pipeline.html;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.table {
-    internal class TableTest {
+    internal class TableTest : BaseTest {
         private List<IElement> cells1 = new List<IElement>();
         private List<IElement> cells2 = new List<IElement>();
         private List<IElement> rows = new List<IElement>();

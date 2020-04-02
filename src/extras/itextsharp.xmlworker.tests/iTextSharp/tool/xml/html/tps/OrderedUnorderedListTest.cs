@@ -57,7 +57,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class OrderedUnorderedListTest {
+    internal class OrderedUnorderedListTest : BaseTest {
         private Tag root;
         private Tag p;
         private Tag ul;

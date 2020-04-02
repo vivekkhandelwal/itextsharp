@@ -47,8 +47,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    class MetaDataTest
-    {
+    class MetaDataTest : BaseTest {
         [Test]
         virtual public void TestProducer()
         {

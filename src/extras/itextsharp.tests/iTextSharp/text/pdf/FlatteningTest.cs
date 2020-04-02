@@ -54,7 +54,7 @@ namespace itextsharp.tests.iTextSharp.text.pdf {
      * @author Michael Demey
      */
 
-    public class FlatteningTest {
+    public class FlatteningTest : BaseTest {
         private const string RESOURCES_FOLDER = @"..\..\resources\text\pdf\FlatteningTest\";
         private const string OUTPUT_FOLDER = "FlatteningTest/";
 

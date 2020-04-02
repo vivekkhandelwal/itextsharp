@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;net20</TargetFrameworks>
+    <RootNamespace>itextsharp.pdfa</RootNamespace>
+    <AssemblyName>itextsharp.pdfa</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>itextsharp.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Include="iTextSharp\text\pdf\AFRelationshipValue.cs" />
+    <Compile Include="iTextSharp\text\pdf\interfaces\IPdfAConformance.cs" />
+    <Compile Include="iTextSharp\text\pdf\intern\PdfA1Checker.cs" />
+    <Compile Include="iTextSharp\text\pdf\intern\PdfA2Checker.cs" />
+    <Compile Include="iTextSharp\text\pdf\intern\PdfA3Checker.cs" />
+    <Compile Include="iTextSharp\text\pdf\intern\PdfAChecker.cs" />
+    <Compile Include="iTextSharp\text\pdf\intern\PdfAConformanceImp.cs" />
+    <Compile Include="iTextSharp\text\pdf\intern\ZugferdChecker.cs" />
+    <Compile Include="iTextSharp\text\pdf\PdfAConformanceException.cs" />
+    <Compile Include="iTextSharp\text\pdf\PdfAConformanceLevel.cs" />
+    <Compile Include="iTextSharp\text\pdf\PdfACopy.cs" />
+    <Compile Include="iTextSharp\text\pdf\PdfARadioCheckField.cs" />
+    <Compile Include="iTextSharp\text\pdf\PdfASmartCopy.cs" />
+    <Compile Include="iTextSharp\text\pdf\PdfAStamper.cs" />
+    <Compile Include="iTextSharp\text\pdf\PdfAStamperImp.cs" />
+    <Compile Include="iTextSharp\text\pdf\PdfATtfUnicodeWriter.cs" />
+    <Compile Include="iTextSharp\text\pdf\PdfAWriter.cs" />
+    <Compile Include="iTextSharp\text\xml\xmp\PdfAProperties.cs" />
+    <Compile Include="iTextSharp\text\xml\xmp\PdfASchema.cs" />
+    <Compile Include="iTextSharp\text\xml\xmp\PdfAXmpWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\itextsharp.netcore.csproj">
+      <Project>{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}</Project>
+      <Name>itextsharp.netcore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="itextsharp.snk" />
+  </ItemGroup>
+  
+</Project>

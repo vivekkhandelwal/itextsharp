@@ -45,8 +45,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.io
 {
-    class GetBufferedRandomAccessSourceTest
-    {
+    class GetBufferedRandomAccessSourceTest : BaseTest {
         [Test]
         virtual public void TestSmallSizedFile()
         {

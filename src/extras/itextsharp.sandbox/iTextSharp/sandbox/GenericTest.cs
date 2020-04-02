@@ -51,7 +51,7 @@ using NUnit.Framework;
 namespace iTextSharp.sandbox
 {
     [TestFixture]
-    public abstract class GenericTest
+    public abstract class GenericTest : BaseTest
     {
         /// <summary>
         /// The logger class
@@ -75,21 +75,11 @@ namespace iTextSharp.sandbox
         private string differenceImagePrefix = "difference";
 
         /// <summary>
-        /// Should be overriden to obtain dlls for testing.
-        /// TestCaseData should have 2 args of Type and bool types
-        /// </summary>
-        /// <returns>Returns TestCaseData enumerable</returns>
-        public abstract IEnumerable<TestCaseData> Data();
-
-        /// <summary>
         /// Tests the example.
         /// If SRC and DEST are defined, the example manipulates a PDF;
         /// if only DEST is defined, the example creates a PDF.
         /// </summary>
-        [Test]
-        [TestCaseSource("Data")]
-        [Timeout(120000)]
-        public void Test(Type type, bool compareRenders)
+        public virtual void Test(Type type, bool compareRenders)
         {
             this.type = type;
             this.sampleName = type.Name;
@@ -205,7 +195,7 @@ namespace iTextSharp.sandbox
             if (string.IsNullOrEmpty(cmp)) 
                 return;
             CompareTool compareTool = new CompareTool();
-            string outPath = "./target/" + new DirectoryInfo(dest).Parent; 
+            string outPath = "./target/" + new DirectoryInfo(dest).Parent.FullName.Substring(Directory.GetCurrentDirectory().Length); 
             new DirectoryInfo(outPath).Create();
             if (compareRenders)
             {

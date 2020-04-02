@@ -49,7 +49,7 @@ using iTextSharp.text.pdf;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf {
-    public class TaggedPdfOnEndPageTest {
+    public class TaggedPdfOnEndPageTest : BaseTest {
         private const string TEST_RESOURCES_PATH = @"..\..\resources\text\pdf\TaggedPdfOnEndPageTest\";
         private const string OUTPUT_FOLDER = @"TaggedPdfOnEndPageTest\";
 

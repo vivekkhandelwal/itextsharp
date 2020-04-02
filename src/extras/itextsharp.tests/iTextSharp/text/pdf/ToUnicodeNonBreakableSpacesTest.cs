@@ -48,8 +48,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    class ToUnicodeNonBreakableSpacesTest
-    {
+    class ToUnicodeNonBreakableSpacesTest : BaseTest {
         private BaseFont fontWithToUnicode;
         private const string TEST_RESOURCES_PATH = @"..\..\resources\text\pdf\ToUnicodeNonBreakableSpacesTest\";
         private const string TARGET = @"ToUnicodeNonBreakableSpacesTest\";

@@ -49,7 +49,7 @@ using iTextSharp.text.error_messages;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.error_messages {
-    internal class ErrorMessageExistenceTest {
+    internal class ErrorMessageExistenceTest : BaseTest {
         private static String[] LANGUAGES = {"nl", "en"};
         private static String SOURCE_FILES_EXTENSION = ".cs";
         private static String SOURCE_CODE_ROOT_PATH = @"..\..\..\..\";

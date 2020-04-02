@@ -27,11 +27,15 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf {
     [TestFixture]
-    public class FreeTextFlatteningTest {
+    public class FreeTextFlatteningTest : BaseTest {
         private const String FOLDER = @"..\..\resources\text\pdf\FreeTextFlatteningTest\";
         private const String TARGET = @"FreeTextFlattening\";
 
-        [TestFixtureSetUp]
+#if NETCOREAPP
+    	[OneTimeSetUp]
+#else
+    	[TestFixtureSetUp]
+#endif
         public static void setUp() {
             Directory.CreateDirectory(TARGET);
         }

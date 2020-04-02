@@ -52,11 +52,15 @@ namespace itextsharp.tests.iTextSharp.text.pdf.table {
      * @author Michael Demey
      */
     [TestFixture]
-    public class RowspanTest {
+    public class RowspanTest : BaseTest {
         private static readonly String CMP_FOLDER = @"..\..\resources\text\pdf\table\RowspanTest\";
         private static readonly String OUTPUT_FOLDER = @"table\RowspanTest\";
 
-        [TestFixtureSetUp]
+#if NETCOREAPP
+    	[OneTimeSetUp]
+#else
+    	[TestFixtureSetUp]
+#endif
         public static void Init() {
             Directory.CreateDirectory(OUTPUT_FOLDER);
         }

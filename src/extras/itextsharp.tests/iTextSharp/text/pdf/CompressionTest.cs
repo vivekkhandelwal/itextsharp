@@ -49,8 +49,7 @@ using iTextSharp.text.pdf;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    internal class CompressionTest
-    {
+    internal class CompressionTest : BaseTest {
         private const string TEST_RESOURCES_PATH = @"..\..\resources\text\pdf\CompressionTest\";
         private const string TARGET_PATH = @"CompressionTest\";
 

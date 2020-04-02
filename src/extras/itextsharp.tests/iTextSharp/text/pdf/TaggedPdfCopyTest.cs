@@ -53,7 +53,7 @@ using iTextSharp.text.pdf.parser;
 
 namespace itextsharp.tests.text.pdf
 {
-    public class TaggedPdfCopyTest
+    public class TaggedPdfCopyTest : BaseTest
     {
         private Document document;
         private PdfCopy copy;
@@ -917,13 +917,14 @@ namespace itextsharp.tests.text.pdf
         }
 
         [Test]
-        [ExpectedException(typeof (BadPdfFormatException))]
         public void CopyTaggedPdf24() {
-            InitializeDocument("24");
-            PdfReader reader1 = new PdfReader(SOURCE24);
-            copy.AddPage(copy.GetImportedPage(reader1, 17, true));
-            document.Close();
-            reader1.Close();
+            Assert.Throws(typeof(BadPdfFormatException), () => { 
+                InitializeDocument("24");
+                PdfReader reader1 = new PdfReader(SOURCE24);
+                copy.AddPage(copy.GetImportedPage(reader1, 17, true));
+                document.Close();
+                reader1.Close();
+            });
         }
 
         [Test]

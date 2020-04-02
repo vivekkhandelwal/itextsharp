@@ -50,11 +50,15 @@ using NUnit.Framework;
 namespace itextsharp.tests.iTextSharp.text.pdf.table {
 
     [TestFixture]
-    public class LargeTableTest {
+    public class LargeTableTest : BaseTest {
         private static readonly String CMP_FOLDER = @"..\..\resources\text\pdf\table\LargeTableTest\";
         private static readonly String OUTPUT_FOLDER = @"table\LargeTableTest\";
 
-        [TestFixtureSetUp]
+#if NETCOREAPP
+    	[OneTimeSetUp]
+#else
+    	[TestFixtureSetUp]
+#endif
         public static void Init() {
             Directory.CreateDirectory(OUTPUT_FOLDER);
         }

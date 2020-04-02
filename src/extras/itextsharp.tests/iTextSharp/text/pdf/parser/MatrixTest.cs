@@ -45,8 +45,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.parser
 {
-    class MatrixTest
-    {
+    class MatrixTest : BaseTest {
         [Test]
         virtual public void TestMultiply()
         {

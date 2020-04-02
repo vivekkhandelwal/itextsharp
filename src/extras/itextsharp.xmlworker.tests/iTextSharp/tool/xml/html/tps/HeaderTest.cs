@@ -55,7 +55,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class HeaderTest {
+    internal class HeaderTest : BaseTest {
         private static Tag H2 = new Tag("h2");
         private Header h = new Header();
         private IList<IElement> content = null;

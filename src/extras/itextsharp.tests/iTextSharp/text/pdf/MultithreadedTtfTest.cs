@@ -49,7 +49,7 @@ using iTextSharp.text.pdf;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf {
-    internal class MultithreadedTtfTest {
+    internal class MultithreadedTtfTest : BaseTest {
         private const string TEST_RESOURCES_PATH = @"..\..\resources\text\pdf\MultithreadedTtfTest\";
         private const string TARGET_PATH = @"MultithreadedTtfTest\";
         private static Dictionary<int, Exception> exceptions;

@@ -57,7 +57,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html {
  *
  */
 
-    internal class LineHeightLetterSpacingTest {
+    internal class LineHeightLetterSpacingTest : BaseTest {
         private ITagProcessorFactory factory;
         private XMLWorker worker;
         private MemoryStream baos;

@@ -48,8 +48,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf
 {
-    class PdfReaderSelectPagesTest
-    {
+    class PdfReaderSelectPagesTest : BaseTest {
         byte[] data;
         string dataFile;
         string TEST_RESOURCES_PATH = @"..\..\resources\text\pdf\PdfReaderSelectPagesTest\";

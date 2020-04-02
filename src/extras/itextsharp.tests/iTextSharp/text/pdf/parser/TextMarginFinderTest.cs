@@ -48,8 +48,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.parser
 {
-    class TextMarginFinderTest
-    {
+    class TextMarginFinderTest : BaseTest {
         [Test]
         virtual public void TestBasics()
         {

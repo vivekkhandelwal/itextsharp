@@ -56,7 +56,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class DivTest {
+    internal class DivTest : BaseTest {
         private Div d = new Div();
         private List<IElement> currentContent = new List<IElement>();
         private WorkerContextImpl workerContextImpl;

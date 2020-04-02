@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -17,3 +18,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyVersion("5.5.14")]
 [assembly: AssemblyInformationalVersion("5.5.14-SNAPSHOT")]
+
+#if NETCOREAPP
+[assembly: LevelOfParallelism(1)]
+#endif

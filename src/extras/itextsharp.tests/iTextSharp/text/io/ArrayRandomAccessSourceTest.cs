@@ -47,8 +47,7 @@ using iTextSharp.text.io;
 
 namespace itextsharp.tests.iTextSharp.text.io
 {
-    public class ArrayRandomAccessSourceTest
-    {
+    public class ArrayRandomAccessSourceTest : BaseTest {
         byte[] data;
 
         [SetUp]

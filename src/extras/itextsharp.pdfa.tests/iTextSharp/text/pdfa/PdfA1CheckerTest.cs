@@ -51,7 +51,7 @@ namespace iTextSharp.text.pdfa
 {
 
     [TestFixture]
-    public class PdfA1CheckerTest
+    public class PdfA1CheckerTest : BaseTest
     {
         static PdfA1CheckerTest() {
             try {

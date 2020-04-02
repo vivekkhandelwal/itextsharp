@@ -45,8 +45,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.text.error_messages
 {
-    public class ErrorMessageTest
-    {
+    public class ErrorMessageTest : BaseTest {
         /*
          * using 1.unsupported.jpeg.marker.2={1}: unsupported JPEG marker: {2}
          */

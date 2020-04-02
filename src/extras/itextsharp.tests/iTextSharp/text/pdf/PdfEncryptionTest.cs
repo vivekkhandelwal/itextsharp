@@ -60,7 +60,7 @@ using Org.BouncyCastle.X509;
 using X509Certificate = System.Security.Cryptography.X509Certificates.X509Certificate;
 
 namespace itextsharp.tests.iTextSharp.text.pdf {
-    class PdfEncryptionTest {
+    class PdfEncryptionTest : BaseTest {
         public static string SOURCE_FOLDER = @"..\..\resources\text\pdf\PdfEncryptionTest\";
         public static string DEST_FOLDER = @"PdfEncryptionTest\";
 
@@ -128,9 +128,8 @@ namespace itextsharp.tests.iTextSharp.text.pdf {
 
             EncryptPdfWithCertificate(inPdf, tmpPdf, SOURCE_FOLDER + "test.cer");
 
-            X509Certificate cert = new X509Certificate();
-            cert.Import(SOURCE_FOLDER + "test.cer");
-
+            X509Certificate cert = new X509Certificate(File.ReadAllBytes(SOURCE_FOLDER + "test.cer"));
+            
             Pkcs12Store pkstore = new Pkcs12Store(new FileStream(SOURCE_FOLDER + "test.p12", FileMode.Open, FileAccess.Read), "kspass".ToCharArray());
             string pkalias = null;
             foreach (object a in pkstore.Aliases)
@@ -147,8 +146,7 @@ namespace itextsharp.tests.iTextSharp.text.pdf {
 
         public static void EncryptPdfWithCertificate(string sourceDocument, string targetDocument, string certPath)
         {
-            X509Certificate chain = new X509Certificate();
-            chain.Import(certPath);
+            X509Certificate chain = new X509Certificate(File.ReadAllBytes(certPath));
             Org.BouncyCastle.X509.X509Certificate cert = Org.BouncyCastle.Security.DotNetUtilities.FromX509Certificate(chain);
             Org.BouncyCastle.X509.X509Certificate[] certs = new Org.BouncyCastle.X509.X509Certificate[1] { cert };
             PdfReader reader = new PdfReader(sourceDocument);

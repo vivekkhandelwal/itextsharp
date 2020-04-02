@@ -48,7 +48,7 @@ using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf.fonts
 {
-    public class FontEmbeddingTest
+    public class FontEmbeddingTest : BaseTest
     {
         public const String RESOURCES = @"..\..\resources\text\pdfa\";
 

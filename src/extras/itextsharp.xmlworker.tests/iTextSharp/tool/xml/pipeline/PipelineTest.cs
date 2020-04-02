@@ -46,7 +46,7 @@ using NUnit.Framework;
 using iTextSharp.tool.xml.pipeline;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.pipeline {
-    internal class PipelineTest {
+    internal class PipelineTest : BaseTest {
         private AbstractPipelineExtension abstractPipelineExtension;
         private AbstractPipeline ap;
         private IWorkerContext ctx;

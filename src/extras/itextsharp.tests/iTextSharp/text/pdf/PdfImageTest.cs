@@ -48,7 +48,7 @@ using iTextSharp.text.pdf;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf {
-    public class PdfImageTest {
+    public class PdfImageTest : BaseTest {
         private const String target = "PdfImageTest/";
         private const String source = "../../resources/text/pdf/PdfImageTest/";
 

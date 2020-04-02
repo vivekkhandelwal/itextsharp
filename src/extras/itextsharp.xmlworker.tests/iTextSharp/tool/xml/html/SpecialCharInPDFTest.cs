@@ -61,7 +61,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html {
  *
  */
 
-    internal class SpecialCharInPDFTest {
+    internal class SpecialCharInPDFTest : BaseTest {
         public static String RESOURCE_TEST_PATH = @"..\..\resources\";
         public static String SNIPPETS = "/snippets/";
         private string TARGET = @"SpecialCharInPDFTest\";

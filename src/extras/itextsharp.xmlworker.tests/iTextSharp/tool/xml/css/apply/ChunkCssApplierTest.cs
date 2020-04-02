@@ -47,7 +47,7 @@ using iTextSharp.tool.xml.css.apply;
 using NUnit.Framework;
 
 namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.css.apply {
-    internal class ChunkCssApplierTest {
+    internal class ChunkCssApplierTest : BaseTest {
         private Tag t;
         private Chunk c;
         private ChunkCssApplier applier = new ChunkCssApplier();

@@ -48,7 +48,7 @@ using iTextSharp.text.pdf;
 namespace iTextSharp.text.pdfa
 {
     [TestFixture]
-    public class PdfAWriterTest
+    public class PdfAWriterTest : BaseTest
     {
         public const String RESOURCES = @"..\..\resources\text\pdfa\";
         public const String TARGET = "PdfAWriterTest\\";

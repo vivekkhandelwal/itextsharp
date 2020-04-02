@@ -56,7 +56,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class SpanTest {
+    internal class SpanTest : BaseTest {
         private Span s = new Span();
         private IList<IElement> content = null;
         private WorkerContextImpl workerContextImpl;

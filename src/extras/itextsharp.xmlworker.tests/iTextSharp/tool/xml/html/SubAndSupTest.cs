@@ -55,7 +55,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html {
  *
  */
 
-    internal class SubAndSupTest {
+    internal class SubAndSupTest : BaseTest {
         private static List<IElement> elementList;
         private const string RESOURCES = @"..\..\resources\";
 

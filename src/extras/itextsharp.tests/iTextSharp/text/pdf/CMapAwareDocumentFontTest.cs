@@ -48,7 +48,7 @@ using iTextSharp.text.pdf.parser;
 using NUnit.Framework;
 
 namespace itextsharp.tests.iTextSharp.text.pdf {
-    internal class CMapAwareDocumentFontTest {
+    internal class CMapAwareDocumentFontTest : BaseTest {
         private string TEST_RESOURCES_PATH = @"..\..\resources\text\pdf\CMapAwareDocumentFontTest\";
 
         [Test]

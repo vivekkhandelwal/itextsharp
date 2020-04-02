@@ -54,7 +54,7 @@ namespace itextsharp.xmlworker.tests.iTextSharp.tool.xml.html.tps {
  *
  */
 
-    internal class ParaGraphTest {
+    internal class ParaGraphTest : BaseTest {
         private ParaGraph p = new ParaGraph();
         private List<IElement> currentContent = new List<IElement>();
         private WorkerContextImpl workerContextImpl;
